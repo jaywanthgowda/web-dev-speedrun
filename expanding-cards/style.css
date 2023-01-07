@@ -1,11 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Muli&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Muli&display=swap");
 
 * {
   box-sizing: border-box;
 }
 
 body {
-  font-family: 'Muli', sans-serif;
+  font-family: "Muli", sans-serif;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -16,11 +16,11 @@ body {
 
 .container {
   display: flex;
-  width: 90vw;  
+  width: 90vw;
 }
 
 .panel {
-  background-size: auto 100%;
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   height: 80vh;
@@ -50,12 +50,13 @@ body {
   opacity: 1;
 }
 
-@media(max-width: 480px) {
+@media (max-width: 480px) {
   .container {
     width: 100vw;
   }
 
-  .panel:nth-of-type(4),.panel:nth-of-type(5) {
+  .panel:nth-of-type(4),
+  .panel:nth-of-type(5) {
     display: none;
   }
 }
